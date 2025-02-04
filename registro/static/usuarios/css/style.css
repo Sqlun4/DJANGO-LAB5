@@ -1,0 +1,116 @@
+/* ======= ESTILOS GENERALES ======= */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+/* ======= ESTILOS DEL FORMULARIO ======= */
+.form_container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input {
+    width: 95%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* ======= ESTILOS PARA MENSAJE DE ÉXITO ======= */
+.mensaje-exito {
+    font-family: Arial, sans-serif;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 350px;
+    margin: 10px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+/* ======= ESTILOS PARA MENSAJES DE ERROR ======= */
+.errores {
+    color: #d9534f;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 5px;
+    border-radius: 5px;
+    list-style-type: none;
+    width: 95%;
+    margin: 10px auto;
+    text-align: left;
+    font-size: 14px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.errores li {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+/* ======= ESTILOS PARA DATEPICKER ======= */
+.ui-datepicker{
+    font-size: 14px;
+    background-color: bisque;
+    border: 1px solid blueviolet
+}
+
+.ui-datepicker-header{
+    background-color: blueviolet;
+    color: white;
+}
+
+.ui-datepicker-calendar{
+    color: blue
+}

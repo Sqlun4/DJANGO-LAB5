@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'usuarios/css/style.css' %}">
+    <script src="{% static 'usuarios/js/calendario.js' %}" defer></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+
+</head>
+<body>
+    
+    <div class="form_container">
+        <h1>Registro Usuarios</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="form-group">
+                <label for="id_fecha_nacimiento">Fecha de Nacimiento</label>
+                {{form.fecha_nacimiento}}
+            </div>
+            <button type="submit"> Registrar </button>
+        </form> 
+        {% if form.errors %}
+        <ul class="errores">
+            {% for field in form %}
+                {% for error in field.errors %}
+                    <li>
+                        {{error}}
+                    </li>
+                {% endfor %}
+            {% endfor %}
+        </ul>
+    {% endif %}     
+    </div>
+
+    
+
+</body>
+</html>
